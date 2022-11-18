@@ -14,8 +14,10 @@ export HEROKU_EMAIL==<heroku_account_email_id>
 ```
 terraform init 
 ```
+
+- the following command will ask to write a yes
+- before typing yes validate the logs as to what all is terraform going to provision
 ```
 terraform apply 
 ```
-- this command will ask to write a yes
-- before typing yes validate the logs as to what all is terraform going to provision
+
