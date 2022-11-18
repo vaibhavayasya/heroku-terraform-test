@@ -47,6 +47,6 @@ jobs:
     - name: Terraform Apply
       if: github.event_name == 'push'
       env: 
-        HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY_VV}}
-        HEROKU_EMAIL: ${{secrets.HEROKU_EMAIL_VV}}
+        HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
+        HEROKU_EMAIL: ${{secrets.HEROKU_EMAIL}}
       run: terraform apply -auto-approve -input=false
