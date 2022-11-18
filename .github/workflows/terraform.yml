@@ -46,4 +46,7 @@ jobs:
       # On push to "main", build or change infrastructure according to Terraform configuration files
     - name: Terraform Apply
       if: github.event_name == 'push'
+      env: 
+        HEROKU_API_KEY: ${{HEROKU_API_KEY}}
+        HEROKU_EMAIL: ${{HEROKU_EMAIL}}
       run: terraform apply -auto-approve -input=false
